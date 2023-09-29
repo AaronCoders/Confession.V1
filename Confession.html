@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Bottom Credit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your website content goes here -->
+
+    <div class="footer">
+        &copy; Created By:Aaron M. | Designed by Aaron M.
+    </div>
+</body>
+</html>
+
+
+
+<html>
+    <head>
+        <title>Background Images</title>
+    </head>
+    <body background="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/solid-moss-green-color-garaga-designs.jpg">
+    </body>
+    </html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #7eaf2fd3;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000000;
+        }
+
+        .photo-container {
+            display: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 180px;
+            max-height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Do you like me?</h1>
+        <div class="buttons">
+            <button id="moveButton">No!</button>
+            <button id="sayHiButton">Yes!!</button>
+        </div>
+        <div class="photo-container" id="photoContainer"></div>
+    </div>
+
+    <script>
+        const moveButton = document.getElementById("moveButton");
+        const sayHiButton = document.getElementById("sayHiButton");
+        const showImagesButton = document.getElementById("sayHiButton");
+        const photoContainer = document.getElementById("photoContainer");
+
+        moveButton.addEventListener("click", () => {
+            const randomNumberX = Math.floor(Math.random() * 400);
+            const randomNumberY = Math.floor(Math.random() * 300);
+
+            moveButton.style.transform = `translate(${randomNumberX}px, ${randomNumberY}px)`;
+        });
+
+        sayHiButton.addEventListener("click", () => {
+            alert("Ayieeee Iloveyou Mwa"); // Shows an alert with the message "Hi!" when the button is clicked
+            alert("Chat Mona Ko Ulit!!")
+        });
+
+        showImagesButton.addEventListener("click", () => {
+            // Clear any existing images
+            photoContainer.innerHTML = "";
+
+            // Create and display 10 different photos
+            for (let i = 10; i <= 10; i++) {
+                const img = document.createElement("img");
+                img.src = `https://media.tenor.com/dur8_lWhH2cAAAAC/crazy-cat-dancing-crazy-cat${1}.gif`;
+                photoContainer.appendChild(img);
+            }
+
+            for (let i = 10; i <= 10; i++) {
+                const img = document.createElement("img");
+                img.src = `https://media.tenor.com/8BUHgHZr_9AAAAAC/claire-dancing.gif`;
+                photoContainer.appendChild(img);
+            }
+            for (let i = 10; i <= 10; i++) {
+                const img = document.createElement("img");
+                img.src = `https://media.tenor.com/GSYaS6m-vjsAAAAC/bruh-again.gif`;
+                photoContainer.appendChild(img);
+            }
+            for (let i = 10; i <= 10; i++) {
+                const img = document.createElement("img");
+                img.src = `https://media.tenor.com/HClCsQ_pKoUAAAAC/gherkin-pifi.gif`;
+                photoContainer.appendChild(img);
+            }
+            for (let i = 10; i <= 10; i++) {
+                const img = document.createElement("img");
+                img.src = `https://media.tenor.com/zZmyabk2FCIAAAAC/hi.gif`;
+                photoContainer.appendChild(img);
+            }
+            
+            photoContainer.style.display = "flex";
+        });
+        
+    </script>
+</body>
+</html>
+</body>
+</html>
